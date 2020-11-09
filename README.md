@@ -26,9 +26,12 @@ This project uses the Maven Wrapper, so all you need is Java installed.
 ### Quickstart
 
 - Configure the project to use your own resource group and your own application name (it should be unique across Azure)
-  - Open the `pom.xml` file
-  - Customize the `resourceGroup` and `appName` properties
-  - Include an Azure Storage connection string in the `local.settings.json` file as a `values > AzureWebJobsStorage` property
+  - Open the `pom.xml` file and set the following properties
+    - `functionResourceGroup`
+    - `functionAppName`
+    - `functionAppRegion`
+  - Include an Azure Storage connection string in the `local.settings.json`
+    - `AzureWebJobsStorage`
 - Build the project: `./mvnw clean package`
 - Run the project: `./mvnw azure-functions:run`
 

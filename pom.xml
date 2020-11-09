@@ -23,7 +23,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <azure.functions.maven.plugin.version>1.9.0</azure.functions.maven.plugin.version>
 
-        <!-- customize those two properties. The functionAppName should be unique across Azure -->
+        <!-- Customize these properties. The functionAppName should be unique across Azure -->
         <functionResourceGroup>resource-group-name</functionResourceGroup>
         <functionAppName>function-name</functionAppName>
         <functionAppRegion>azure-region</functionAppRegion> <!-- e.g. centralus -->
