@@ -24,10 +24,10 @@
         <azure.functions.maven.plugin.version>1.9.0</azure.functions.maven.plugin.version>
 
         <!-- customize those two properties. The functionAppName should be unique across Azure -->
-        <functionResourceGroup>rg-spring-timer</functionResourceGroup>
-        <functionAppName>func-spring-timer</functionAppName>
+        <functionResourceGroup>resource-group-name</functionResourceGroup>
+        <functionAppName>function-name</functionAppName>
+        <functionAppRegion>azure-region</functionAppRegion> <!-- e.g. centralus -->
 
-        <functionAppRegion>centralus</functionAppRegion>
         <stagingDirectory>${project.build.directory}/azure-functions/${functionAppName}</stagingDirectory>
         <start-class>com.example.HelloFunction</start-class>
         <spring.boot.wrapper.version>1.0.25.RELEASE</spring.boot.wrapper.version>
